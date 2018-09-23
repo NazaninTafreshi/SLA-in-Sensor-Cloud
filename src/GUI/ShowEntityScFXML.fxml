@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane id="AnchorPane" minHeight="809.0" minWidth="900.0" prefHeight="809.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ShowEntitySc">
+   <children>
+      <StackPane layoutY="25.0" prefHeight="875.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <ScrollPane fitToWidth="true" prefHeight="883.0" prefWidth="900.0" StackPane.alignment="CENTER">
+               <content>
+                  <StackPane alignment="TOP_CENTER">
+                     <children>
+                        <AnchorPane fx:id="pane" prefHeight="782.0" prefWidth="577.0" StackPane.alignment="TOP_CENTER" />
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </StackPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </StackPane>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="196.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Method">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#SAWButtonAction" text="SAW" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#TOPSISbuttonAction" text="TOPSIS" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Back">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#BackButtonAction" text="Back Home" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

@@ -1,0 +1,60 @@
+{
+	"applicationNumber":"2",
+	"brokerNumber":"2",
+	"cloudNumber":"4",
+	"sensorNetworkNumber":"3",
+
+    "application": [
+        {
+            "broker": "1"
+        },
+        {
+            "broker": "0,1"
+        }
+    ],
+    "broker": [
+        {
+            "application": "1",
+            "broker": "",
+            "cloudProvider": "0,3"
+        },
+		{
+            "application": "0,1",
+            "broker": "",
+            "cloudProvider": "0,1,2"
+        }
+    ],
+    "cloudProvider": [
+        {
+            "broker": "0,1",
+            "cloudProvider": "",
+            "sensorNetwork": "2"
+        },
+        {
+            "broker": "1",
+            "cloudProvider": "",
+            "sensorNetwork": "0,1"
+        },
+        {
+            "broker": "1",
+            "cloudProvider": "",
+            "sensorNetwork": "1"
+        },
+        {
+            "broker": "0",
+            "cloudProvider": ""
+            "sensorNetwork": "2"
+        }
+    ],
+    "sensorNetwork": [
+        {
+            "cloudProvider": "1"
+        },
+        {
+            "cloudProvider": "1,2"
+        },
+	    {
+            "cloudProvider": "0,3"
+        }
+    ]
+}

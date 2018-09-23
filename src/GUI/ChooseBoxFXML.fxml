@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="327.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ChooseJsonSc">
+   <children>
+      <CheckBox fx:id="sensorCb" layoutX="14.0" layoutY="23.0" mnemonicParsing="false" prefHeight="7.0" prefWidth="320.0" text="Constant Sensors" AnchorPane.bottomAnchor="170.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="-7.0" AnchorPane.topAnchor="23.0" />
+      <CheckBox fx:id="cloudCb" layoutX="14.0" layoutY="61.0" mnemonicParsing="false" text="Constant Clouds" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="61.0" />
+      <CheckBox fx:id="appCb" layoutX="14.0" layoutY="100.0" mnemonicParsing="false" text="Constant Applications" />
+      <Separator layoutX="3.0" layoutY="45.0" prefHeight="7.0" prefWidth="320.0" />
+      <Separator layoutX="3.0" layoutY="87.0" prefHeight="7.0" prefWidth="320.0" />
+      <Separator layoutX="-1.0" layoutY="129.0" prefHeight="7.0" prefWidth="328.0" />
+      <Button fx:id="okButton" layoutX="246.0" layoutY="158.0" mnemonicParsing="false" onAction="#handleOkButtonAction" prefHeight="17.0" prefWidth="60.0" text="Ok">
+         <font>
+            <Font name="Castellar" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="countTxt" layoutX="25.0" layoutY="158.0" promptText="Cycle Count" />
+   </children>
+</AnchorPane>
